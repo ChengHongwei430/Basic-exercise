@@ -1,0 +1,2 @@
+C:\Users\chw\source\repos\sort\x64\Debug\sort.exe
+C:\Users\chw\source\repos\Basic_sort_1\x64\Debug\sort.exe
