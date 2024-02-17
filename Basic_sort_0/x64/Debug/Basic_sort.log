@@ -1,0 +1,2 @@
+﻿Bubble_Sort2.obj : error LNK2005: main 已经在 Bubble_Sort.obj 中定义
+C:\Users\chw\source\repos\Basic_sort\x64\Debug\Basic_sort.exe : fatal error LNK1169: 找到一个或多个多重定义的符号

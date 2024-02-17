@@ -1,0 +1,6 @@
+﻿  Bubble_Sort.cpp
+  Bubble_Sort2.cpp
+  正在生成代码...
+C:\Users\chw\source\repos\Basic_sort\Bubble_Sort2.cpp(19,21): warning C4018: “<”: 有符号/无符号不匹配
+Bubble_Sort2.obj : error LNK2005: _main 已经在 Bubble_Sort.obj 中定义
+C:\Users\chw\source\repos\Basic_sort\Debug\Basic_sort.exe : fatal error LNK1169: 找到一个或多个多重定义的符号
