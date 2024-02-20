@@ -4,18 +4,18 @@
 using namespace std;
 
 
-void Adjust(int* data, int len) {//µ÷Õû´ó¸ù¶Ñ
-	//¸¸ (i-1)/2
-	//×ó×Ó 2*i+1
-	//ÓÒ×Ó 2*i+2
-	//×îºóÒ»¸öÓĞº¢×ÓµÄ¸¸ len / 2 - 1
-	for (int i = len / 2 - 1; i >= 0; --i) {
+void Adjust(int* data, int len) {//è°ƒæ•´å¤§æ ¹å †
+	//çˆ¶ (i-1)/2
+	//å·¦å­ 2*i+1
+	//å³å­ 2*i+2
+	//æœ€åä¸€ä¸ªæœ‰å­©å­çš„çˆ¶ len / 2 - 1
+	for (int i = len / 2 - 1; i >= 0; --i) {//è‡ªä¸‹å‘ä¸Šè°ƒæ•´
 		int maxson = 2 * i + 1;
 		if (2 * i + 2 <= len - 1) {
 			if (data[2 * i + 2]> data[2 * i + 1]) maxson = 2 * i + 2;
 		}
 		if (data[maxson] > data[i]) {
-			int temp = data[maxson];//×¢Òâ½»»»µÄĞ´·¨
+			int temp = data[maxson];/////////æ³¨æ„äº¤æ¢çš„å†™æ³•
 			data[maxson] = data[i];
 			data[i] = temp;
 		}
@@ -23,9 +23,9 @@ void Adjust(int* data, int len) {//µ÷Õû´ó¸ù¶Ñ
 	
 }
 
-void HeapSort(int* data, int len) {//¶ÑÅÅĞò
+void HeapSort(int* data, int len) {//å †æ’åº
 
-	cout << "ĞÂµÄ±í£º";
+	cout << "æ–°çš„è¡¨ï¼š";
 	while (len) {
 		Adjust(data, len);
 		cout << data[0] << "\t";
@@ -42,12 +42,12 @@ int main() {
 	int len = 6;
 	int* data = new int[len];
 
-	srand(10242);
+	srand(time(0));
 	for (int i = 0; i < len; ++i) {
-		data[i] = 1 + rand() % (9 - 1 + 1);//Éú³É1-9µÄËæ»úÊı;
+		data[i] = 1 + rand() % (9 - 1 + 1);//ç”Ÿæˆ1-9çš„éšæœºæ•°;
 	}
 
-	cout << "³õÊ¼±í£º";
+	cout << "åˆå§‹è¡¨ï¼š";
 	int i = 0;
 	while (i < len) {
 		cout << data[i] << "\t";
