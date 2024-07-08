@@ -1,0 +1,14 @@
+/*
+1、Java Main方法框架写法
+public class Main{//类没有参数，方法才有
+    public static void main(String[] args){ }
+}
+
+
+2、扫描函数写法
+import java.util.Scanner;
+Scanner sc = new Scanner(System.in);
+while(sc.hasNextInt())
+int a = sc.nextInt();
+
+*/
